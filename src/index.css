@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Rubik;
+  src: local(Rubik), url("./assets/fonts/Rubik-Regular.ttf"), format("ttf");
+}
+@font-face {
+  font-family: Roboto;
+  src: local(Roboto), url("./assets/fonts/Roboto-Regular.ttf"), format("ttf");
+}
+
+@layer utilities {
+  .hero-image-overlay {
+    background: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.9)
+      ),
+      url("./assets/images/contrustion-image-crop-2.jpg") no-repeat;
+    background-size: cover;
+    position: center center;
+  }
+  .text-shadow {
+    text-shadow: 1px 1px blue;
+  }
+}
